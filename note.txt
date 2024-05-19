@@ -1,0 +1,28 @@
+function getSumOfAnArray(numbers){
+    let sum=0;
+    for(let i=0;i<numbers.length;i++){
+        const index=i;
+        const elements= numbers[index];
+        sum = sum+elements;
+        // console.log(index,elements,sum);
+    }
+    return sum;
+}
+function getOddNumbersOfAnArray(numbers){
+    const oddNumbers =[];
+    for(let i =0; i<numbers.length;i++){
+        const index= i;
+        const elements = numbers[index];
+        if(elements%2 !==0){
+            console.log(index,elements);
+            oddNumbers.push(elements);
+        }
+
+    }
+    return oddNumbers;
+}
+const myNumbers = [12,33,44,54,23,15,76,97,22];
+const myOddNumbers =getOddNumbersOfAnArray(myNumbers);
+console.log(myOddNumbers);
+const mySumOfOddNumbers =getSumOfAnArray(myOddNumbers);
+console.log(mySumOfOddNumbers) ;

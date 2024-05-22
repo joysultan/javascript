@@ -4,21 +4,21 @@ var myComputer = {
     color: 'silver',
     price : 55000
 }
-// // console.log(myComputer.ram);
-// myComputer.proccessor= 'amd ryzen 5600g';
-// // console.log(myComputer);
+// console.log(myComputer.ram);
+myComputer.proccessor= 'amd ryzen 5600g';
+// console.log(myComputer);
     
-// myComputer['ram'] = 'ddr5 16gb';
-// // console.log(myComputer);
+myComputer['ram'] = 'ddr5 16gb';
+// console.log(myComputer);
 
-// var properties = Object.keys(myComputer);
-// var value = Object.values(myComputer);
-// console.log(properties);
-// console.log(value);
+var properties = Object.keys(myComputer);
+var value = Object.values(myComputer);
+console.log(properties);
+console.log(value);
 
-// var propertyName = 'ram';
-// var propertyValue = myComputer[propertyName];
-// console.log(propertyValue);
+var propertyName = 'ram';
+var propertyValue = myComputer[propertyName];
+console.log(propertyValue);
 
 var myItems={
     books: 3,

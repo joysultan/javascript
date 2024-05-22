@@ -4,7 +4,7 @@ function getSumOfAnArray(numbers){
         const index = i;
         const elements = numbers[index];
         sum= sum+ elements;
-        // console.log(index,elements,sum);
+        console.log(index,elements,sum);
     }
     return sum;
 }
@@ -17,7 +17,7 @@ function getOddNumbersOfAnArray(numbers){
             console.log(index,elements);
             oddNumbers.push(elements);
         }
-       
+        
     }
     return oddNumbers;
 }

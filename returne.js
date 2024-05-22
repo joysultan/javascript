@@ -24,15 +24,15 @@ function add(num1,num2){
     return sum;
 }
 var total= add(45,55);
-// console.log(total);
+console.log(total);
 
-// function bringSingara(money){
-//     var singaraPrice = 10;
-//     var quantity = money/singaraPrice;
-//     return quantity;
-// }
-// var singaras = bringSingara(150);
-// console.log('vage paisi', singaras);
+function bringSingara(money){
+    var singaraPrice = 10;
+    var quantity = money/singaraPrice;
+    return quantity;
+}
+var singaras = bringSingara(150);
+console.log('vage paisi', singaras);
 
 
 function getAverage(assignment1, assignment2,assignment3){

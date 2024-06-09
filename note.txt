@@ -26,3 +26,9 @@ const myOddNumbers =getOddNumbersOfAnArray(myNumbers);
 console.log(myOddNumbers);
 const mySumOfOddNumbers =getSumOfAnArray(myOddNumbers);
 console.log(mySumOfOddNumbers) ;
+
+
+ggtc65
+
+
+01720948863// bkash

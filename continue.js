@@ -7,6 +7,6 @@ for(i=0;i<numbers.length;i++){
    console.log(number)
 }
 
-var fruits = ["apple", "mango", "coconate"];
-var elements = fruits.indexOf("mango");
-console.log(elements);
+// var fruits = ["apple", "mango", "coconate"];
+// var elements = fruits.indexOf("mango");
+// console.log(elements);

@@ -28,7 +28,116 @@ const mySumOfOddNumbers =getSumOfAnArray(myOddNumbers);
 console.log(mySumOfOddNumbers) ;
 
 
-ggtc65
+ return num1 > num2 ? [num1, num2] : [num2, num1];
 
 
-01720948863// bkash
+
+
+
+function getPositiveNumbersUntilNegative(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            break;
+        }
+        result.push(arr[i]);
+    }
+    return result;
+}
+
+// Example usage:
+let numbers = [1, 2, 3, -1, 4, 5];
+let positiveNumbers = getPositiveNumbersUntilNegative(numbers);
+console.log(positiveNumbers); // Output: [1, 2, 3]
+
+
+
+
+
+
+
+function cubeNumber(number){
+
+    if(typeof number!=='number'){
+        return 'please input a Number';
+    }
+    return Math.pow(number,3);
+  
+}
+
+
+
+
+
+function matchFinder(string1, string2){
+
+    if(typeof string1!== 'string' && typeof string2!== 'string'){
+        return 'please input a string';
+    }
+    return string1.includes(string2);
+   
+}
+const results = matchFinder('hello', 'ello');
+
+
+
+
+function sortMaker(arr){
+   const [num1, num2] = arr;
+
+   if(num1<0 || num2<0){
+    return 'invalid Input';
+   }
+
+   if(num1=== num2){
+        return 'equal';
+   }
+
+   return num1 > num2 ? [num1,num2] : [num2,num1];
+
+}
+
+console.log(sortMaker([5,8]));
+
+
+
+
+
+
+
+function findAddress(obj){
+    return Object.values(obj);
+}
+
+const address = {street: 10, House: '15A,', society: 'eart perfect'};
+const result = findAddress(address);
+
+    
+function canPay(moneyArray, chipPrice) {
+    if(moneyArray.length===0){
+        return 'invalid'
+    }
+    for(let i = 0; i<moneyArray.length; i++){
+        const money = moneyArray[i];
+        if(money>= chipPrice){
+            return true;
+        }
+     
+    }
+    return false;
+}
+const moneyArray = [1,2,10,6];
+const chipsPrice = 10;
+const totalPrice = canPay(moneyArray, chipsPrice);
+
+
+
+
+
+
+
+
+
+
+
+

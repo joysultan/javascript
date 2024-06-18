@@ -1,18 +1,18 @@
-const bestFriends = ['hablu', 'chablu', 'jhanggir','mortaza','johnAbraham','adamGilGistt'];
-function FindLongName(names){
+const bestFriends = ['hablu', 'chablu', 'jhanggir','mortaza','johnAbraham','adamGilGistt','dimbu'];
 
+function longestName(names){
 
-    let longest = names[0];
-    for(let i= 0; i<names.length; i++){
+    let longName = names [0];
+    for (let i= 0; i<names.length; i++){
         const name = names[i];
-        if(name.length > longest.length){
-            longest = name;
+        if(name.length> longName.length){
+            longName = name;
         }
     }
-    return longest;
- 
+    return longName;
 }
 
-const longName = FindLongName(bestFriends);
+
+const longName = longestName(bestFriends);
 console.log(longName);
 

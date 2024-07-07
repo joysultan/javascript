@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="secret-repo">please confirm your delete</h2>
+    <input type="text" placeholder="please type delete" id="delete-confirm">
+    <button id="delete-btn" disabled>delete</button>
+
+    <script>
+        document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+            const text = event.target.value;
+            const deleteButton = document.getElementById('delete-btn');
+            if(text=== 'delete'){
+                deleteButton.removeAttribute('disabled')
+            }
+            else{
+                deleteButton.setAttribute('disabled', true);
+            }
+
+            
+        })
+        document.getElementById('delete-btn').addEventListener('click', function(){
+            const secret = document.getElementById('secret-repo');
+            secret.innerText = 'Deleted SuccessFully';
+            secret.style.color = 'red';
+            const deleteConfirm = document.getElementById('delete-confirm');
+            deleteConfirm.value = '';
+
+            
+        })
+    </script>
+</body>
+</html>

@@ -4,21 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h2>hello dom vai</h2>
-
-    </header>
-    <main>
-        <h1>my awsome dom re baba</h1>
+    <main id="main-container">
+   <section id="menu">
+        <h2>hello dom baba</h2>
         <ul>
-            <li>rakib</li>
-            <li>shakib</li>
-            <li>shihab</li>
-            <li>rakib</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
-    </main>
-    <script src="dom-tour.js"></script>
+   </section>
+   <section class="fruit-list" class="text-center">
+            <ul id="fruit"> 
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Banana</a></li>
+                <li><a href="#">Carrot</a></li>
+                <li><a href="#">PineApple</a></li>
+                <li><a href="#">JackFruit</a></li>
+            </ul>
+   </section>
+   <section class="places">
+        <ul>
+            <li><a href="#">Sundarban</a></li>
+            <li><a href="#">kuyaKata</a></li>
+            <li><a href="#">Barisal</a></li>
+            <li><a href="#">Comilla</a></li>
+            <li><a href="#">Chadpur</a></li>
+            <li><a href="#">Voirob</a></li>
+        </ul>
+   </section>
+   <section>
+    <ul>
+        <li>How</li>
+        <li>You</li>
+        <li>are</li>
+    </ul>
+   </section>
+   
+</main>
+<h2 id="location-btn">Where Are You From?</h2>
+<button onclick="locationBtn()">Tell Us Your Location</button>
+<h2 id="age-h2">How Old Are You?</h2>
+<button id="age-btn">Tell Us Your Age Please</button>
+<p id="input-text">Default Text</p>
+<input type="text" id="input-field">
+<button id="update-text">Update Text</button>
+
+
+<script src="in-dom.js"></script>
+<script src="event.js"></script>
+<script src="dom-tour.js"></script>
+   
+
+
+
 </body>
 </html>
